@@ -26,7 +26,6 @@ BuildRequires:	perl(Test::Pod)
 BuildRequires:	perl(DBD::SQLite2)
 BuildRequires:	perl(Test::Pod::Coverage)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 DBIx::Class::Loader automate the definition of DBIx::Class sub-classes by
