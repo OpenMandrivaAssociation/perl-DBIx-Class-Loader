@@ -8,7 +8,7 @@ Release:	5
 Summary:	Dynamic definition of DBIx::Class sub classes
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/DBIx/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
