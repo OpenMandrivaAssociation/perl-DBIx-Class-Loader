@@ -1,15 +1,13 @@
 %define upstream_name	 DBIx-Class-Loader
-%define upstream_version 0.21
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.21
+Release:	7
 
 Summary:	Dynamic definition of DBIx::Class sub classes
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/DBIx-Class-Loader
-Source0:	https://cpan.metacpan.org/authors/id/B/BL/BLBLACK/DBIx-Class-Loader-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BL/BLBLACK/DBIx-Class-Loader-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ are defined by table names and the namespace option. The only required
 arguments are namespace and dsn.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL installdirs=vendor destdir=%{buildroot}
@@ -58,9 +56,7 @@ make
 
 * Tue Aug 04 2009 Jérôme Quelin <jquelin@mandriva.org> 0.210.0-1mdv2011.0
 + Revision: 408952
-- rebuild using %%perl_convert_version
-
-* Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.21-2mdv2009.0
+- rebuild using %0.21 Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.21-2mdv2009.0
 + Revision: 289470
 - rebuild
 
